@@ -61,7 +61,7 @@ class Ajax {
     public static function add_ajax_events() {
         // woocommerce_EVENT => nopriv
         $ajax_events = array(
-            'tripletex'                      => false,
+            'test_function'                      => false,
         );
         foreach ($ajax_events as $ajax_event => $nopriv) {
             \add_action('wp_ajax_woocommerce_' . $ajax_event, array(__CLASS__, $ajax_event));
@@ -73,10 +73,10 @@ class Ajax {
         }
     }
 
-	public static function tripletex( ){
+	public static function test_function( ){
 
 		\check_ajax_referer('plugin-security', 'security');
-		$order_id = \stripslashes($_REQUEST['orderid']);
+		$order_id = ($_REQUEST['id']) ? \stripslashes($_REQUEST['id']) : "empty";
 
 		wp_send_json_success(["id" => $order_id ]);
 		die();
