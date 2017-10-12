@@ -2,9 +2,12 @@
 
 # Getting started
 1. Clone this repository
+1. Rename main plugin file and folder
+1. Delete composer.lock
 1. Find and replace all
    1. MyPluginNamespace
    1. my-plugin
+   1. My Plugin
 1. Run composer install
 1. Run NPM install
 1. Activate the plugin
