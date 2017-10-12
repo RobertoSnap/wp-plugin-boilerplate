@@ -1,0 +1,29 @@
+{
+  "name": "my-plugin",
+  "version": "0.0.1",
+  "description": "A wp / wc plugin boilerplate",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch",
+    "deploy": "gulp deploy",
+    "build": "gulp basic"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-sort": "^2.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-zip": "^3.2.0",
+    "node-sass": "^3.2.0"
+  },
+  "author": "Robertosnap",
+  "license": "ISC"
+}

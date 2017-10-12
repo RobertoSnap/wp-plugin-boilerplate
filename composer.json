@@ -1,0 +1,16 @@
+{
+    "name": "My plugin",
+    "description": "My plugin description",
+    "type": "wordpress-plugin",
+    "keywords": ["wordpress", "plugin"],
+    "homepage": "https://brewoocommerce.com",
+    "autoload": {
+        "psr-4": {
+            "MyPluginNamespace\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "composer/installers": "~1.0"
+    }
+}
